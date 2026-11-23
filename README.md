@@ -39,3 +39,15 @@ validator, the bounds, the SAT time limit, and that every instance in `data/fjsp
 
 `-t 0` removes the time limit (each solver runs until it proves the optimum).
 `python cli.py COMMAND -h` lists every option.
+## Getting help
+
+The CLI has built-in help. Run these from the project root:
+
+```bash
+.venv/bin/python cli.py -h          # list the commands (solve, bench, info)
+.venv/bin/python cli.py solve -h    # options for solving one instance
+.venv/bin/python cli.py bench -h    # options for benchmarking many instances
+.venv/bin/python cli.py info -h     # options for listing instance sizes and bounds
+```
+
+If the virtual environment is activated (`source .venv/bin/activate`), `python cli.py -h` works too.
